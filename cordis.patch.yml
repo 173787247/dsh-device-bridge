@@ -1,0 +1,11 @@
+- insert:
+    - id: dsh-device-bridge
+      name: dsh-device-bridge
+      config:
+        enabled: true
+        timeoutMs: 30000
+        devices: []
+        defaultAllowActions:
+          - health
+          - ping
+          - status

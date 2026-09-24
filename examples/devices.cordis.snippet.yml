@@ -1,0 +1,11 @@
+# Under dsh-device-bridge config:
+devices:
+  - id: phone-lab
+    baseUrl: http://192.168.1.80:18766
+    kind: phone
+    token: ""
+    allowActions: [health, ping, status]
+  - id: aix-agent
+    baseUrl: http://10.10.1.20:18766
+    kind: aix-agent
+    allowActions: [health, status, inventory]
