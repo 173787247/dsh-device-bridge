@@ -10,7 +10,7 @@ Generic Companion-protocol client for phones / IoT / thin agents.
 
 | Field | Value |
 |-------|-------|
-| **Plugin** | `dsh-device-bridge` **0.1.0** |
+| **Plugin** | `dsh-device-bridge` **0.1.1** |
 | **Minimum dsh** | ≥ **0.1.2** |
 | **Latest verified** | See [dsh-wsl-kit Compatibility](https://github.com/173787247/dsh-wsl-kit#compatibility-2026-09) (currently **`0.1.7-alpha.2`**) |
 

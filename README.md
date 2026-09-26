@@ -10,7 +10,7 @@
 
 | 字段 | 值 |
 |------|----|
-| **插件** | `dsh-device-bridge` **0.1.0** |
+| **插件** | `dsh-device-bridge` **0.1.1** |
 | **最低 dsh** | ≥ **0.1.2** |
 | **最新验证** | 以 [dsh-wsl-kit 兼容性](https://github.com/173787247/dsh-wsl-kit#compatibility-2026-09) 为准（当前 **`0.1.7-alpha.2`**） |
 | **套件档位** | 可选（远程桥接） |
@@ -32,7 +32,16 @@ python3 companion/mock_server.py --port 18766 --kind phone
 
 配置见 `examples/devices.cordis.snippet.yml`。协议：[`docs/PROTOCOL.md`](./docs/PROTOCOL.md)。
 
-手机聊天入口仍用 [dsh-wsl-im](https://github.com/173787247/dsh-wsl-im)；本插件负责设备侧能力。
+### Termux / 轻量 companion
+
+手机上可用 stdlib 样例（健康检查 + ping/notify 桩）：
+
+```sh
+python3 examples/termux-companion.py --port 18767
+# Termux: 允许局域网访问后，在 dsh 侧配置 baseUrl=http://<phone-ip>:18767
+```
+
+手机聊天入口仍用 [dsh-wsl-im](https://github.com/173787247/dsh-wsl-im)；本插件负责设备侧能力。`lib/companion_client.js` 从 [dsh-wsl-common](https://github.com/173787247/dsh-wsl-common) 再导出。
 
 ## License
 
